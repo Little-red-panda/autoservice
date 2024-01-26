@@ -2,6 +2,7 @@
   padding: 104px 0 120px;
   color: #222;
 }
+
 .contact__title {
   margin-bottom: 40px;
   text-align: center;
@@ -17,6 +18,7 @@
 
 .form {
   padding: 60px;
+  border-radius: 32px;
   background-color: #fff;
 }
 
@@ -75,6 +77,8 @@
 }
 
 .form__months {
+  display: flex;
+  gap: 16px;
   margin-bottom: 16px;
 }
 
@@ -86,17 +90,14 @@
 
 .form__btn-month--active {
   color: #d10014;
+  transform: scale(1.1);
 }
 
 .form__subtitle {
-  margin-bottom: 16px;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
 }
-
-/* .form__btn-month {
-} */
 
 .form__input-wrapper {
   display: grid;
@@ -105,27 +106,28 @@
   margin-bottom: 32px;
 }
 
-.form__input-wrapper input[type="text"] {
+.form__input {
   padding: 12px 20px;
   border-radius: 8px;
-  background: #f0f4f4;
+  background-color: #f0f4f4;
   border: 1px solid transparent;
+  color: inherit;
   outline: none;
 }
 
-.form__input-wrapper input[type="text"]::placeholder {
+.form__input::placeholder {
   color: #dcdcdc;
 }
 
-/* .form__input-wrapper input[type="text"]:hover {
+/* .form__input:hover {
+  background-color: #f0f4f4;
 } */
 
-.form__input-wrapper input[type="text"]:focus-visible {
+.form__input:focus-visible {
   border-color: #d0d0d0;
 }
 
 .form__info {
-  font-size: 16px;
   font-weight: 500;
   line-height: 140%;
 }
@@ -134,8 +136,6 @@
   display: flex;
   gap: 8px;
   font-family: Arial;
-  font-size: 16px;
-  line-height: 140%;
 }
 
 .form__btns {
@@ -151,7 +151,7 @@
   padding: 12px 20px;
   border-radius: 50px;
   border: 1px solid transparent;
-  background: #f0f4f4;
+  background-color: #f0f4f4;
   color: #222;
   font-weight: 500;
   outline: none;
@@ -166,19 +166,83 @@
 }
 
 .form__btn:disabled {
+  background-color: #f0f4f4;
+  color: #222;
   opacity: 0.4;
+  pointer-events: none;
 }
 
-.form__btn--next {
+.form__btn--next,
+.form__btn--submit {
   background-color: #d10014;
   color: #ffffff;
 }
 
 .form__btn--next:hover {
-  background: #222222;
+  background: #222;
   color: #ffffff;
 }
 
 .form__btn--next:focus-visible {
-  border-color: #222222;
+  border-color: #222;
+}
+
+@media (max-width: 1080px) {
+  .contact {
+    padding: 80px 0 120px;
+  }
+
+  .contact__title {
+    margin-bottom: 32px;
+    font-size: 60px;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 50px 0 100px;
+  }
+
+  .contact__title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact {
+    padding: 30px 0 80px;
+  }
+
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .form {
+    padding: 24px 16px;
+  }
+
+  .form__title {
+    margin-bottom: 24px;
+  }
+
+  .form__radio-wrapper {
+    margin-bottom: 24px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 24px;
+  }
+
+  .form__input-wrapper {
+    grid-template-columns: 1fr;
+    margin-bottom: 24px;
+  }
 }

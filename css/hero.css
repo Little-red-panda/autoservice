@@ -22,6 +22,7 @@
 }
 
 .hero__intro {
+  margin-top: -13px;
   display: flex;
   justify-content: space-between;
 }
@@ -35,9 +36,89 @@
 }
 
 .hero__tagline {
+  padding-bottom: 4px;
   width: min-content;
   color: #d10014;
-  font-size: 24x;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    padding: 63px 0 32px;
+  }
+
+  .hero__title {
+    font-size: 120px;
+  }
+
+  .hero__title-down {
+    margin-top: -63px;
+  }
+
+  .hero__intro {
+    margin-top: -20px;
+  }
+
+  .hero__tagline {
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 58px 0 6px;
+  }
+
+  .hero__title {
+    font-size: 90px;
+  }
+
+  .hero__title-down {
+    margin-top: -32px;
+  }
+
+  .hero__intro {
+    margin-top: -4px;
+  }
+}
+
+@media (max-width: 660px) {
+  .hero {
+    padding: 45px 0 25px;
+    background-position: top;
+  }
+
+  .hero__title {
+    font-size: 66px;
+  }
+
+  .hero__title-down {
+    margin-top: -20px;
+    margin-bottom: 32px;
+  }
+
+  .hero__intro {
+    margin-top: 0;
+  }
+
+  .hero__year {
+    align-self: start;
+  }
+
+  .hero__tagline {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-size: 208px;
+  }
+
+  .hero__title {
+    font-size: 44px;
+  }
 }

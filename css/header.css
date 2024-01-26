@@ -5,8 +5,10 @@
 
 .header__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
 }
 
 .header__logo {
@@ -32,4 +34,20 @@
 
 .header__link:focus-visible {
   border-color: #d10014;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding: 16px 0 24px;
+  }
 }

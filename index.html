@@ -54,7 +54,7 @@
 
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="contact__title">Заполните форму и&nbsp;мы&nbsp;<span class="contact__title-text-red">свяжемся
+        <h2 class="contact__title">Заполните форму и&nbsp;мы <span class="contact__title-text-red">свяжемся
             с&nbsp;вами</span>
         </h2>
 
@@ -210,24 +210,24 @@
             <legend class="form__title">Заполните поля</legend>
 
             <div class="form__input-wrapper">
-              <input type="text" name="name" placeholder="Имя">
-              <input type="text" name="phone" placeholder="Телефон">
-              <input type="text" name="car" placeholder="Модель и марка автомобиля">
-              <input type="text" name="year" placeholder="Год выпуска">
+              <input class="form__input" type="text" name="name" placeholder="Имя">
+              <input class="form__input" type="text" name="phone" placeholder="Телефон">
+              <input class="form__input" type="text" name="car" placeholder="Модель и марка автомобиля">
+              <input class="form__input" type="text" name="year" placeholder="Год выпуска">
             </div>
 
             <p class="form__info">Диагностика и&nbsp;ремонт двигателей</p>
 
             <p class="form__info">
               <time class="form__info-date" datetime="2024-03-02T14:00">
-                <span>03.02</span>
-                <span>14:00</span>
+                <span class="form__info-date-day">03.02</span>
+                <span class="form__info-date-time">14:00</span>
               </time>
             </p>
           </fieldset>
 
           <div class="form__btns">
-            <button class="form__btn">
+            <button class="form__btn" type="button">
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM13 6.75H1V5.25H13V6.75Z"
@@ -235,13 +235,16 @@
               </svg>
               <span>Назад</span>
             </button>
-            <button class="form__btn form__btn--next">
+            <button class="form__btn form__btn--next" type="button">
               <span>Далее</span>
               <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12.5303 6.53033C12.8232 6.23744 12.8232 5.76256 12.5303 5.46967L7.75736 0.696699C7.46447 0.403806 6.98959 0.403806 6.6967 0.696699C6.40381 0.989593 6.40381 1.46447 6.6967 1.75736L10.9393 6L6.6967 10.2426C6.40381 10.5355 6.40381 11.0104 6.6967 11.3033C6.98959 11.5962 7.46447 11.5962 7.75736 11.3033L12.5303 6.53033ZM0 6.75H12V5.25H0V6.75Z"
                   fill="currentColor" />
               </svg>
+            </button>
+            <button class="form__btn form__btn--submit" type="submit">
+              Отправить
             </button>
           </div>
         </form>
@@ -250,19 +253,18 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <img src="img/logo.svg" alt="" class="footer__logo">
 
-      <div class="footer__wrapper">
-        <div class="footer__copyritght">&copy;&nbsp;AutoService, 2024</div>
+      <div class="footer__copyritght">&copy;&nbsp;AutoService, 2024</div>
 
-        <div class="footer__developers">
-          <ul>
-            <li class="footer__developer-designer">Designer: <a class="footer__developer" href="#">Anastasia Ilina</a>
-            </li>
-            <li>Developer: <a class="footer__developer" href="#">Pianova Daria</a></li>
-          </ul>
-        </div>
+      <div class="footer__developers">
+        <ul>
+          <li class="footer__developer">Designer: <a class="footer__developer-link" href="#">Anastasia
+              Ilina</a>
+          </li>
+          <li class="footer__developer">Developer: <a class="footer__developer-link" href="#">Pianova Daria</a></li>
+        </ul>
       </div>
 
     </div>
