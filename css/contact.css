@@ -1,0 +1,184 @@
+.contact {
+  padding: 104px 0 120px;
+  color: #222;
+}
+.contact__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.contact__title-text-red {
+  color: #d10014;
+}
+
+.form {
+  padding: 60px;
+  background-color: #fff;
+}
+
+.form__fieldset {
+  margin-bottom: 32px;
+}
+
+.form__title {
+  margin-bottom: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.form__radio-wrapper {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__label {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background: #f0f4f4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.radio__label:hover {
+  background: #e4f0f0;
+}
+
+.radio__input:focus-visible + .radio__label {
+  border-color: #d10014;
+}
+
+.radio__input:checked + .radio__label {
+  background: #222;
+  color: #fff;
+}
+
+.form__months {
+  margin-bottom: 16px;
+}
+
+.form__btn-month {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-month--active {
+  color: #d10014;
+}
+
+.form__subtitle {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-month {
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.form__input-wrapper input[type="text"] {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #f0f4f4;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.form__input-wrapper input[type="text"]::placeholder {
+  color: #dcdcdc;
+}
+
+/* .form__input-wrapper input[type="text"]:hover {
+} */
+
+.form__input-wrapper input[type="text"]:focus-visible {
+  border-color: #d0d0d0;
+}
+
+.form__info {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__info-date {
+  display: flex;
+  gap: 8px;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.form__btns {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background: #f0f4f4;
+  color: #222;
+  font-weight: 500;
+  outline: none;
+}
+
+.form__btn:hover {
+  background: #e4f0f0;
+}
+
+.form__btn:focus-visible {
+  border-color: #d10014;
+}
+
+.form__btn:disabled {
+  opacity: 0.4;
+}
+
+.form__btn--next {
+  background-color: #d10014;
+  color: #ffffff;
+}
+
+.form__btn--next:hover {
+  background: #222222;
+  color: #ffffff;
+}
+
+.form__btn--next:focus-visible {
+  border-color: #222222;
+}
