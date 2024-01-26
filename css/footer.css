@@ -1,0 +1,29 @@
+.footer {
+  padding: 40px 0 30px;
+  background: #222;
+}
+
+.footer__logo {
+  margin-bottom: 50px;
+  width: 480px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* .footer__copyritght {
+} */
+
+.footer__developer:hover {
+  color: #d10014;
+}
+
+.footer__developer-designer {
+  margin-bottom: 7px;
+}
