@@ -8,7 +8,7 @@
 
   <link rel="icon" href="img/favicon.svg">
   <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js" defer></script>
+  <script src="js/index.js" type="module"></script>
 </head>
 
 <body>
@@ -60,10 +60,10 @@
         </h2>
 
         <form class="contact__form form">
-          <fieldset class="form__fieldset form__fieldset--active">
+          <fieldset class="form__fieldset form__fieldset--active  form__fieldset--type">
             <legend class="form__title">Выберите нужное направление</legend>
 
-            <div class="form__radio-wrapper">
+            <div class="form__radio-wrapper form__radio-wrapper--type">
               <div class="radio">
                 <input type="radio" name="type" value="bodyRepair" class="radio__input" id="bodyRepair">
                 <label class="radio__label" for="bodyRepair">Кузовной ремонт</label>
@@ -113,7 +113,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--date">
             <legend class="form__title">Выберите дату и&nbsp;время</legend>
 
             <div class="form__months">
@@ -122,7 +122,7 @@
               <button type="button" class="form__btn-month">Апрель</button>
             </div>
 
-            <div class="form__radio-wrapper">
+            <div class="form__radio-wrapper form__radio-wrapper--day">
               <div class="radio">
                 <input type="radio" name="day" class="radio__input" id="day1">
                 <label class="radio__label" for="day1">1</label>
@@ -178,7 +178,7 @@
             <div class="form__time">
               <p class="form__subtitle">Доступное время:</p>
 
-              <div class="form__radio-wrapper">
+              <div class="form__radio-wrapper form__radio-wrapper--time">
                 <div class="radio">
                   <input type="radio" name="time" class="radio__input" id="time10">
                   <label class="radio__label" for="time10">10:00</label>
@@ -207,7 +207,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset form__fieldset--client">
             <legend class="form__title">Заполните поля</legend>
 
             <div class="form__input-wrapper">
@@ -217,7 +217,7 @@
               <input class="form__input" type="text" name="year" placeholder="Год выпуска">
             </div>
 
-            <p class="form__info">Диагностика и&nbsp;ремонт двигателей</p>
+            <p class="form__info form__info--type">Диагностика и&nbsp;ремонт двигателей</p>
 
             <p class="form__info">
               <time class="form__info-date" datetime="2024-03-02T14:00">
