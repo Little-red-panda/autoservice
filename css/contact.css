@@ -23,7 +23,12 @@
 }
 
 .form__fieldset {
+  display: none;
   margin-bottom: 32px;
+}
+
+.form__fieldset--active {
+  display: block;
 }
 
 .form__title {
@@ -178,7 +183,8 @@
   color: #ffffff;
 }
 
-.form__btn--next:hover {
+.form__btn--next:hover,
+.form__btn--submit:hover {
   background: #222;
   color: #ffffff;
 }
