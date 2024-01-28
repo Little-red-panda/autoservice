@@ -102,7 +102,7 @@
 .form__input-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  gap: 12px 8px;
   margin-bottom: 32px;
 }
 
@@ -189,7 +189,7 @@
 
 @media (max-width: 1080px) {
   .contact {
-    padding: 80px 0 120px;
+    padding: 60px 0 120px;
   }
 
   .contact__title {
@@ -218,7 +218,7 @@
 
 @media (max-width: 660px) {
   .contact {
-    padding: 30px 0 80px;
+    padding: 50px 0 80px;
   }
 
   .contact__title {
@@ -227,6 +227,7 @@
 
   .form {
     padding: 24px 16px;
+    border-radius: 16px;
   }
 
   .form__title {

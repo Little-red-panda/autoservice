@@ -103,7 +103,7 @@ iframe {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .container {
     --container-padding: 16px;
   }

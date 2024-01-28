@@ -48,15 +48,16 @@
   }
 
   .footer__container {
-    gap: 32px;
+    gap: 16px;
   }
 
   .footer__logo {
     max-width: 230px;
+    margin-bottom: 16px;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .footer__container {
     grid-template-areas:
       "logo"
@@ -65,6 +66,5 @@
   }
   .footer__developers {
     justify-self: self-start;
-    margin-top: -16px;
   }
 }
