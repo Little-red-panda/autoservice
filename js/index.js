@@ -1,4 +1,5 @@
 import { fetchData } from "./fetchData.js";
+import { mockData } from "./mockData.js";
 
 const form = document.querySelector(".contact__form");
 const formBtnPrev = document.querySelector(".form__btn--prev");
@@ -15,6 +16,9 @@ const timeRadioWrapper = document.querySelector(".form__radio-wrapper--time");
 const formMonthsWrapper = document.querySelector(".form__months");
 const formInfoType = document.querySelector(".form__info--type");
 const formInfoDate = document.querySelector(".form__info-date");
+const alert = document.querySelector(".form__alert");
+const alertBtn = document.querySelector(".form__alert-btn");
+const errorText = document.querySelector(".form__error-response");
 
 const currentMonth = new Intl.DateTimeFormat("ru-RU", { month: "long" }).format(
   new Date()
@@ -22,7 +26,17 @@ const currentMonth = new Intl.DateTimeFormat("ru-RU", { month: "long" }).format(
 let month = currentMonth;
 let currentStep = 0;
 
-const data = await fetchData();
+let data = await fetchData();
+
+if (data) {
+  alert.style.display = "none";
+} else {
+  data = mockData;
+  alertBtn.addEventListener("click", () => {
+    alert.style.display = "none";
+  });
+}
+
 const dataToWrite = {
   dataType: {},
   day: "",
@@ -77,7 +91,6 @@ const showResultData = () => {
     dataToWrite.time
   }`;
 
-  console.log(dataToWrite.time);
   const dateObj = new Date(dateString);
   const formattedDate = dateObj.toLocaleDateString("ru-RU", {
     day: "2-digit",
@@ -206,7 +219,6 @@ const handleInputForm = ({ currentTarget, target }) => {
     }
     if (currentTarget.time.value && target.name === "time") {
       dataToWrite.time = currentTarget.time.value;
-      console.log(dataToWrite.time);
       formBtnNext.disabled = false;
     } else {
       formBtnNext.disabled = true;
@@ -287,6 +299,7 @@ const init = () => {
       }
     } catch (error) {
       console.error(`Ошибка при отправке запроса: ${error}`);
+      errorText.innerHTML = `Ошибка при отправке запроса. Попробуйте позже.`;
     }
   });
 };
